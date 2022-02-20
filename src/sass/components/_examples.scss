@@ -1,0 +1,119 @@
+.examples {
+  padding-top: 50px;
+  padding-bottom: 46px;
+
+  text-align: center;
+
+  @media screen and (min-width: $width-tablet-version) {
+    padding-top: 48px;
+    padding-bottom: 47px;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    padding-top: 50px;
+  }
+}
+
+.examples-container {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.examples__slogan {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 18px;
+  line-height: 1.67;
+
+  color: $txt-main-color;
+
+  @media screen and (min-width: $width-tablet-version) {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+}
+
+.examples-gallery__tittle {
+  margin: 0;
+  margin-bottom: 35px;
+
+  font-weight: $font-weight-thin;
+  font-size: 38px;
+  line-height: 1.26;
+
+  color: $txt-main-color;
+
+  @media screen and (min-width: $width-desktop-version) {
+    margin-bottom: 34px;
+  }
+}
+
+.gallery-description {
+  width: 207px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 37px;
+
+  @media screen and (min-width: $width-tablet-version) {
+    width: 645px;
+    margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    margin-bottom: 39px;
+  }
+}
+
+.gallery-description__text {
+  font-size: 16px;
+  line-height: 1.62;
+
+  color: $txt-main-color;
+
+  @media screen and (min-width: $width-tablet-version) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.examples-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (min-width: $width-tablet-version) {
+    margin-top: -7px;
+    margin-left: -8px;
+  }
+}
+
+.examples-cards__card {
+  @media screen and (min-width: $width-tablet-version) {
+    max-width: 172px;
+    flex-basis: calc(100% / 4);
+    margin-left: 8px;
+    margin-top: 7px;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    max-width: 320px;
+  }
+}
+
+.examples-cards__card img {
+  width: 100%;
+  height: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.examples-cards__card:not(:first-child) {
+  @media screen and (max-width: 767px) {
+    margin-top: 7px;
+  }
+}

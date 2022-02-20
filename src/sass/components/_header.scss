@@ -1,0 +1,126 @@
+.header__container {
+  position: absolute;
+
+  width: 100%;
+  height: 120px;
+
+  @media screen and (min-width: $width-tablet-version) {
+    height: 70px;
+
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 11px;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    padding-left: 50px;
+    padding-right: 46px;
+  }
+}
+
+.header--fixed {
+  position: fixed;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+
+  z-index: 5;
+  top: 0;
+  width: 100vw;
+
+  @media screen and (min-width: $width-tablet-version) {
+    height: 70px;
+  }
+}
+
+.logo__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 21px;
+
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 1.3;
+  color: $txt-white-color;
+
+  transition: scale $time-transition ease-in-out;
+
+  &:hover {
+    scale: 1.05;
+  }
+
+  @media screen and (min-width: $width-tablet-version) {
+    margin: 0;
+
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+.site-nav {
+  @media screen and (min-width: $width-tablet-version) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.site-nav__list {
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (min-width: $width-tablet-version) {
+    margin-left: auto;
+  }
+}
+
+.nav-item {
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
+  }
+}
+
+.site-nav__link {
+  display: inline-block;
+  height: 26px;
+
+  color: $txt-white-color;
+  position: relative;
+
+  font-size: 16px;
+  line-height: 1.56;
+
+  &:hover,
+  &:focus {
+    .nav-link::after {
+      width: 100%;
+    }
+  }
+
+  .nav-link::after {
+    display: block;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+    background-color: $accent-color;
+    content: '';
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,83 @@
+body {
+  min-width: 320px;
+
+  font-family: $main-font-family;
+  // letter-spacing: 0.03em;
+
+  background-color: $primary-bg-color;
+  color: $txt-main-color;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: $width-mobile-version;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: $width-tablet-version;
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: $width-desktop-version;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.button {
+  border: transparent;
+  border-radius: 4px;
+
+  background-color: $button-bg-color;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-secondary;
+  line-height: 1.62;
+  font-family: inherit;
+  cursor: pointer;
+
+  transition: background-color $time-transition $function-bezire,
+    color $time-transition $function-bezire;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $txt-white-color;
+  }
+
+  &:focus {
+    background-color: $accent-color;
+    color: $txt-white-color;
+  }
+}
+
+.button__arrow {
+  margin-right: 5px;
+}

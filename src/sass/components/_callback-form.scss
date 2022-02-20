@@ -1,0 +1,173 @@
+.callback-form {
+  padding-bottom: 30px;
+
+  background-color: $third-bg-color;
+
+  @media screen and (min-width: $width-tablet-version) {
+    padding-bottom: 0;
+  }
+}
+
+.callback-container {
+  @media screen and (min-width: $width-tablet-version) {
+    display: flex;
+  }
+}
+
+.callback-img__thumb {
+  @media screen and (max-width: 767) {
+    margin-bottom: 26px;
+  }
+}
+
+.callback-form__img {
+  width: 100%;
+  height: auto;
+
+  @media screen and (min-width: $width-tablet-version) {
+    width: 50vw;
+    height: 349px;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    height: 460px;
+  }
+}
+
+.form-thumb {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $width-tablet-version) {
+    width: 384px;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    width: 680px;
+
+    padding-bottom: 82px;
+  }
+}
+
+.form-tittle {
+  width: 147px;
+
+  margin: 0;
+  margin-bottom: 34px;
+
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+
+  color: $txt-main-color;
+
+  @media screen and (min-width: $width-tablet-version) {
+    width: 305px;
+
+    margin-top: 26px;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    margin-top: 78px;
+  }
+}
+
+.form-inputs {
+  position: relative;
+
+  &:not(:first-child) {
+    margin-bottom: 0;
+  }
+}
+
+.form-inputs input {
+  width: 100%;
+
+  height: 40px;
+
+  margin-bottom: 36px;
+
+  border: 1px solid transparent;
+}
+
+.form__input-label {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  font-size: 16px;
+  line-height: 1.44;
+
+  color: $txt-input-color;
+
+  transition: top 0.3s;
+
+  @media screen and (min-width: $width-tablet-version) {
+    font-size: 18px;
+    line-height: 1.28;
+  }
+}
+
+.subscribe__text {
+  font-size: 16px;
+  line-height: 23px;
+
+  &:focus ~ .form__input-label,
+  &:not(:placeholder-shown) ~ .form__input-label {
+    position: absolute;
+    top: -25px;
+  }
+}
+
+#callback-email {
+  margin-bottom: 53px;
+
+  @media screen and (min-width: $width-desktop-version) {
+    margin-bottom: 60px;
+  }
+}
+
+.input__warning-message {
+  position: absolute;
+  bottom: 10px;
+
+  display: flex;
+  align-items: center;
+
+  opacity: 0;
+}
+
+.input__warning-icon {
+  width: 15px;
+  height: 15px;
+  fill: #eb5757;
+}
+
+.input__warning-text {
+  margin: 0;
+  color: #eb5757;
+}
+
+.callback__button {
+  width: 100%;
+
+  height: 42px;
+
+  font-size: 16px;
+  line-height: 1.37;
+
+  color: $txt-white-color;
+
+  @media screen and (min-width: $width-tablet-version) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}

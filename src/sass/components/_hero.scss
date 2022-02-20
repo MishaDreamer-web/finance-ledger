@@ -1,0 +1,128 @@
+.hero {
+  text-align: center;
+  background-color: $secondary-bg-color;
+}
+
+.hero__img {
+  min-width: 320px;
+  max-width: 1600px;
+  height: 533px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 144px;
+  padding-bottom: 95px;
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/hero/showcase.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url(../images/hero/showcase@2x.jpg);
+  }
+
+  @media screen and (min-width: $width-tablet-version) {
+    height: 1024px;
+    padding-top: 407px;
+    padding-bottom: 412px;
+  }
+
+  @media screen and (min-width: $width-desktop-version) {
+    height: 768px;
+    padding-top: 279px;
+    padding-bottom: 284px;
+  }
+}
+
+.hero__text {
+  width: 246px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $width-tablet-version) {
+    width: 493px;
+  }
+}
+
+.hero__tittle {
+  width: 241px;
+
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: $font-weight-thin;
+  font-size: 52px;
+  line-height: 1.27;
+  text-align: center;
+
+  color: $txt-white-color;
+
+  @media screen and (min-width: $width-tablet-version) {
+    width: 493px;
+
+    margin-bottom: 25px;
+
+    font-size: 55px;
+    line-height: 1.2;
+  }
+}
+
+.hero__slogan {
+  width: 246px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 27px;
+
+  display: block;
+
+  color: $txt-second-color;
+
+  font-weight: $font-weight-normal;
+  font-size: 22px;
+  line-height: 1.68;
+  text-align: center;
+
+  @media screen and (min-width: $width-tablet-version) {
+    width: 459px;
+
+    margin-bottom: 29px;
+  }
+}
+
+.hero__button {
+  width: 156px;
+  height: 45px;
+
+  font-size: $font-size-secondary;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+
+  background-color: $accent-color;
+  color: $txt-white-color;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  @media screen and (min-width: $width-tablet-version) {
+    width: 165px;
+    height: 48px;
+
+    font-size: 18px;
+    line-height: 1.55;
+  }
+}
