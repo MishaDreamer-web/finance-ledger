@@ -7,9 +7,8 @@ const warnMsg = document.querySelector('.input__warning-message');
 formBtn.addEventListener('click', onFormBtnSubmit);
 
 function onFormBtnSubmit(event) {
-  event.preventDefault();
-
   if (emailInput.value === '') {
+    event.preventDefault();
     warnMsg.style.opacity = 1;
   } else {
     warnMsg.style.opacity = 0;
