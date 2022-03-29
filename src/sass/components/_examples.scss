@@ -91,8 +91,7 @@
 
 .examples-cards__card {
   @media screen and (min-width: $width-tablet-version) {
-    max-width: 172px;
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 4 - 8px);
     margin-left: 8px;
     margin-top: 7px;
   }
@@ -112,8 +111,8 @@
   }
 }
 
-.examples-cards__card:not(:first-child) {
+.examples-cards__card:not(:last-child) {
   @media screen and (max-width: 767px) {
-    margin-top: 7px;
+    margin-bottom: 7px;
   }
 }

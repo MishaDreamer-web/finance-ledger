@@ -2,7 +2,6 @@ body {
   min-width: 320px;
 
   font-family: $main-font-family;
-  // letter-spacing: 0.03em;
 
   background-color: $primary-bg-color;
   color: $txt-main-color;
@@ -23,7 +22,7 @@ body {
   }
 
   @media screen and (min-width: 1360px) {
-    width: $width-desktop-version;
+    width: 100%;
   }
 }
 
@@ -58,9 +57,10 @@ img {
   border-radius: 4px;
 
   background-color: $button-bg-color;
-  font-weight: $font-weight-medium;
+
+  font-weight: $font-weight-normal;
   font-size: $font-size-secondary;
-  line-height: 1.62;
+  line-height: 1.6;
   font-family: inherit;
   cursor: pointer;
 

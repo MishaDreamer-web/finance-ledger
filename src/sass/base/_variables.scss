@@ -10,10 +10,13 @@ $blog-color: #0284d0;
 $footer-bg-color: #333333;
 $footer-contacts-color: rgba(255, 255, 255, 0.6);
 $button-bg-color: #f5f4fa;
-
+$logo-color: #000000;
+$border-bottom-color: #ececec;
+$card-border-color: #eeeeee;
 $social-link-color: #afb1b8;
 $icon-white-color: #ffffff;
-
+$clients-logo-border-color: #afb1b8;
+$modal-bg-color: #ffffff;
 $time-transition: 300ms;
 $time-transition-slow: 500ms;
 $function-bezire: cubic-bezier(0.4, 0, 0.2, 1);
@@ -23,9 +26,24 @@ $main-font-family: 'Open Sans', sans-serif;
 
 $font-weight-normal: 400;
 $font-weight-thin: 300;
-$font-weight-medium: 500;
 
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$font-size-form: 12px;
+$font-size-basic: 14px;
 $font-size-secondary: 16px;
+$font-size-third: 18px;
+$font-size-modal: 20px;
+$font-size-logo: 26px;
+$font-size-tittle: 36px;
+
+$line-height-basic: 1.14;
+$line-height-secondary: 1.17;
+$line-height-third: 1.71;
+$line-height-button: 1.87;
+$line-height-teammate: 1.19;
 
 $width-mobile-version: 480px;
 $width-tablet-version: 768px;

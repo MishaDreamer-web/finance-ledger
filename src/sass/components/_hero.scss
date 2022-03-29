@@ -1,14 +1,13 @@
 .hero {
   text-align: center;
   background-color: $secondary-bg-color;
-}
 
-.hero__img {
   min-width: 320px;
-  max-width: 1600px;
+
   height: 533px;
   margin-left: auto;
   margin-right: auto;
+
   padding-top: 144px;
   padding-bottom: 95px;
 
@@ -45,6 +44,9 @@
     padding-top: 279px;
     padding-bottom: 284px;
   }
+}
+
+.hero__img {
 }
 
 .hero__text {
@@ -102,13 +104,14 @@
   }
 }
 
+// changed button size options
 .hero__button {
-  width: 156px;
-  height: 45px;
+  display: inline-flex;
+  align-items: center;
 
-  font-size: $font-size-secondary;
-  line-height: 1.62;
-  letter-spacing: 0.06em;
+  padding: 9px 30px 10px 30px;
+
+  font-weight: $font-weight-normal;
 
   background-color: $accent-color;
   color: $txt-white-color;
@@ -119,10 +122,13 @@
   }
 
   @media screen and (min-width: $width-tablet-version) {
-    width: 165px;
-    height: 48px;
+    padding-top: 10px;
 
     font-size: 18px;
     line-height: 1.55;
   }
+}
+
+.hero__button i {
+  font-size: 18px;
 }

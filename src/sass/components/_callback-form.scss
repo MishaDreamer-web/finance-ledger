@@ -15,7 +15,7 @@
 }
 
 .callback-img__thumb {
-  @media screen and (max-width: 767) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 26px;
   }
 }
@@ -47,11 +47,15 @@
 
     margin-left: 0;
     margin-right: 0;
+
+    padding-top: 26px;
+    padding-bottom: 30px;
   }
 
   @media screen and (min-width: $width-desktop-version) {
     width: 680px;
 
+    padding-top: 78px;
     padding-bottom: 82px;
   }
 }
@@ -70,29 +74,17 @@
 
   @media screen and (min-width: $width-tablet-version) {
     width: 305px;
-
-    margin-top: 26px;
-  }
-
-  @media screen and (min-width: $width-desktop-version) {
-    margin-top: 78px;
   }
 }
 
 .form-inputs {
   position: relative;
-
-  &:not(:first-child) {
-    margin-bottom: 0;
-  }
 }
 
 .form-inputs input {
   width: 100%;
 
   height: 40px;
-
-  margin-bottom: 36px;
 
   border: 1px solid transparent;
 }
@@ -127,7 +119,11 @@
   }
 }
 
-#callback-email {
+.callback-name {
+  margin-bottom: 36px;
+}
+
+.callback-email {
   margin-bottom: 53px;
 
   @media screen and (min-width: $width-desktop-version) {
@@ -137,12 +133,13 @@
 
 .input__warning-message {
   position: absolute;
-  bottom: 10px;
+  bottom: -25px;
 
   display: flex;
   align-items: center;
 
   opacity: 0;
+  pointer-events: none;
 }
 
 .input__warning-icon {
@@ -158,8 +155,9 @@
 
 .callback__button {
   width: 100%;
-
   height: 42px;
+
+  justify-content: center;
 
   font-size: 16px;
   line-height: 1.37;

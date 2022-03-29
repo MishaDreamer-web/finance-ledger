@@ -26,10 +26,6 @@
 .features-description {
   padding: 30px;
 
-  @media screen and (max-width: 767px) {
-    width: 315px;
-  }
-
   @media screen and (min-width: $width-desktop-version) {
     width: 100%;
 
@@ -51,6 +47,7 @@
 
 .features-description__text {
   margin: 0;
+  margin-bottom: 5px;
 
   font-size: 18px;
   line-height: 1.67;
@@ -67,7 +64,6 @@
   width: 204px;
 
   margin: 0;
-  margin-top: 5px;
   margin-bottom: 25px;
 
   font-weight: $font-weight-thin;
@@ -89,6 +85,8 @@
   display: inline-block;
   width: 260px;
 
+  margin-bottom: 14px;
+
   font-size: 16px;
   line-height: 1.62;
   font-weight: normal;
@@ -97,6 +95,7 @@
 
   @media screen and (min-width: $width-tablet-version) {
     width: 315px;
+    margin-bottom: 20px;
 
     font-size: 18px;
     line-height: 1.55;
@@ -104,18 +103,11 @@
 
   @media screen and (min-width: $width-desktop-version) {
     width: 606px;
+    margin-bottom: 17px;
   }
 }
 
 .features__button {
-  width: 158px;
-  height: 47px;
-
-  margin-top: 14px;
-
-  font-size: 16px;
-  line-height: 1.62;
-
   border: 1px solid $button-bg-color;
 
   &:hover {
@@ -124,16 +116,7 @@
   }
 
   @media screen and (min-width: $width-tablet-version) {
-    width: 167px;
-    height: 50px;
-
-    margin-top: 20px;
-
     font-size: 18px;
     line-height: 1.56;
-  }
-
-  @media screen and (min-width: $width-desktop-version) {
-    margin-top: 17px;
   }
 }
